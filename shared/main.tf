@@ -43,6 +43,8 @@ resource "aws_security_group" "development_db" {
   vpc_id = module.vpc.vpc_id
 }
 
+# Note how we just allow port 5432 ingress from the private subnet CIDRs, this is because the security group ID of future
+# development account security groups cannot be known at this time. So we just allow the CIDR
 resource "aws_security_group_rule" "development_db_ingress" {
   security_group_id = aws_security_group.development_db.id
   type              = "ingress"
