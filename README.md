@@ -1,6 +1,6 @@
 # Using AWS Resource Access Manager to share an Aurora cluster for development
 
-This is a demo repo that accompanies the following blog post LINK
+This is a demo repo that accompanies the following [blog post](https://fourtheorem.com/using-aws-resource-access-manager-for-development)
 
 ![RAM in shared account](img/RAM_account.png)
 
